@@ -1,8 +1,60 @@
-@import "mixins";
-
-@media only screen and (max-width: 1300px) {
+@import "compass/css3/transition";
+@media only screen and (max-width: 1550px) {
   .jumbotron {
-    background-color: rgba(255, 255, 255, 0.7) !important;
-    @include transition;
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    @include transition-property(all);
+    @include transition-duration(0.5s);
+    @include transition-timing-function(ease-in-out);
   }
+}
+@media only screen and (max-width: 767px) {
+  #nav-menu {
+    justify-content: center !important;
+    background-color: white;
+    margin-bottom: 50px !important;
+  }
+
+  #bg {
+    background: none !important;
+
+    .jumbotron {
+      margin-right: 0 !important;
+      margin-bottom: 0 !important;
+      padding-top: 0 !important;
+      align-items: center;
+
+      p {
+        text-align: center;
+      }
+
+      #mobile-img {
+        display: block!important;
+        width: auto;
+        height: 400px;
+      }
+
+      h1 {
+        margin: 40px 0;
+      }
+
+      .btn {
+        margin-top: 20px;
+      }
+
+      #face-img {
+        width: 100% !important;
+        opacity: 1 !important;
+      }
+    }
+  }
+
+  footer {
+    margin-top: 0 !important;
+    .row {
+      flex-direction: column;
+    }
+    #bottom-menu-767 {
+      margin-top: 20px;
+    }
+  }  
 }
