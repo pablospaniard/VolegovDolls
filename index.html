@@ -51,8 +51,8 @@
           </li>
           <li><a href="about.html">About</a></li>
           <li><a href="#">Exhibitons</a></li>
-          <li><a href="#">Order</a></li>
-          <li><a href="#">Contacts</a></li>
+          <li><a href="#" data-target="#order" data-toggle="modal">Order</a></li>
+          <li><a href="#" data-target="#contacts" data-toggle="modal">Contacts</a></li>
         </ul>
       </div>
     </div>
@@ -90,10 +90,76 @@
     </div>
   </footer>
 
-  <!-- JQuery and BootstrapJS, Placed at the end of the document so the pages load faster -->
-  <script src="./src/js/jquery-3.2.1.slim.js"></script>
-  <script src="./src/js/bootstrap.min.js"></script>
+  <!-- MODAL Contacts -->
+  <div class="modal fade" tabindex="-1" role="dialog" id="contacts">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Please, fill this contact form.</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Your Email">
+            </div>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="name" class="form-control" id="name" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+              <label for="city">Your City</label>
+              <input type="city" class="form-control" id="city" placeholder="Your City">
+            </div>
+            <textarea class="form-control" rows="5" placeholder="Enter your message here"></textarea>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <!-- MODAL Order -->
+  <div class="modal fade" tabindex="-1" role="dialog" id="order">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">You order a doll. What is required:</h4>
+        </div>
+        <div class="modal-body">
+          <ul><br>
+            <li>1. <strong>Photos</strong> of the person in high quality. If there are more photos it is better. It is desirable in face and in profile. </li><br>
+            <li>2. Your <strong>wishes and short story</strong> - a hobby, history. All this can help in doll creation. </li><br>
+            <li>3. <strong>Exterior data:</strong> color of eyes, hair color, birthmarks, character peculiarities. </li><br>
+            <li>4. The doll can have the built in <strong>light-emitting diodes</strong> or simple mechanical appliances.</li><br>
+            <li>5. Discussion. Quantity, terms. </li><br>
+            <li>6. A <strong>cooperation</strong> order:
+              <ul>
+                <li>a. The sketch </li>
+                <li>b. 50% Payment in advance </li>
+                <li>c. Work process in photos by e-mail </li>
+                <li>d. Confirmation </li>
+                <li>e. Payment of remained sum + sum of delivery </li>
+                <li>g. You have a <strong>Doll !</strong></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- JQuery and BootstrapJS, Placed at the end of the document so the pages load faster -->
+  <script src="src/js/jquery-3.2.1.slim.js"></script>
+  <script src="src/js/bootstrap.min.js"></script>
+  <script src="src/js/main.js"></script>
 </body>
 
 </html>

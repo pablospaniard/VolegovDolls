@@ -9198,10 +9198,10 @@ button.close {
     -moz-transition-property: compact(all, false, false, false, false, false, false, false, false, false);
     -o-transition-property: compact(all, false, false, false, false, false, false, false, false, false);
     transition-property: compact(all, false, false, false, false, false, false, false, false, false);
-    -webkit-transition-duration: compact(0.5s, false, false, false, false, false, false, false, false, false);
-    -moz-transition-duration: compact(0.5s, false, false, false, false, false, false, false, false, false);
-    -o-transition-duration: compact(0.5s, false, false, false, false, false, false, false, false, false);
-    transition-duration: compact(0.5s, false, false, false, false, false, false, false, false, false);
+    -webkit-transition-duration: compact(1s, false, false, false, false, false, false, false, false, false);
+    -moz-transition-duration: compact(1s, false, false, false, false, false, false, false, false, false);
+    -o-transition-duration: compact(1s, false, false, false, false, false, false, false, false, false);
+    transition-duration: compact(1s, false, false, false, false, false, false, false, false, false);
     -webkit-transition-timing-function: compact(ease-in-out, false, false, false, false, false, false, false, false, false);
     -moz-transition-timing-function: compact(ease-in-out, false, false, false, false, false, false, false, false, false);
     -o-transition-timing-function: compact(ease-in-out, false, false, false, false, false, false, false, false, false);
@@ -9396,6 +9396,21 @@ footer .row .social-icons {
   flex-direction: row;
   flex-shrink: 1;
   justify-content: space-around;
+}
+
+/* line 119, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
+#order .modal-content {
+  padding: 20px;
+}
+
+/* line 123, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
+#order .modal-body li ul li {
+  margin-left: 20px;
+}
+
+/* line 130, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
+#contacts .modal-content {
+  padding: 20px;
 }
 
 /*# sourceMappingURL=../css/style.map */

@@ -3,7 +3,7 @@
   .jumbotron {
     background-color: rgba(255, 255, 255, 0.8) !important;
     @include transition-property(all);
-    @include transition-duration(0.5s);
+    @include transition-duration(1s);
     @include transition-timing-function(ease-in-out);
   }
 }
@@ -56,5 +56,5 @@
     #bottom-menu-767 {
       margin-top: 20px;
     }
-  }  
+  }
 }
