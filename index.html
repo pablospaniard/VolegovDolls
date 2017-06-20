@@ -27,7 +27,6 @@
 
   <nav class="navbar navbar-default">
     <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
@@ -42,11 +41,11 @@
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Gallery <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#">Famous</a></li>
-              <li><a href="#">Great</a></li>
-              <li><a href="#">Unique</a></li>
-              <li><a href="#">Different</a></li>
-              <li><a href="#">Video</a></li>
+              <li><a href="famous.html">Famous</a></li>
+              <li><a href="great.html">Great</a></li>
+              <li><a href="unique.html">Unique</a></li>
+              <li><a href="different.html">Different</a></li>
+              <li><a href="video.html">Video</a></li>
             </ul>
           </li>
           <li><a href="about.html">About</a></li>
@@ -78,13 +77,27 @@
       </div>
       <div class="col-sm-6 col-xs-12" id="bottom-menu-767">
         <ul class="social-icons">
-          <li class="socialicon"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></li>
-          <li class="socialicon"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></li>
-          <li class="socialicon"><i class="fa fa-rss fa-2x" aria-hidden="true"></i></li>
-          <li class="socialicon"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></li>
-          <li class="socialicon"><i class="fa fa-google-plus fa-2x" aria-hidden="true"></i></li>
-          <li class="socialicon"><i class="fa fa-pinterest-p fa-2x" aria-hidden="true"></i></li>
-          <li class="socialicon"><i class="fa fa-vk fa-2x" aria-hidden="true"></i></li>
+          <li class="socialicon">
+            <a href=""><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a>
+          </li>
+          <li class="socialicon">
+            <a href=""><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
+          </li>
+          <li class="socialicon">
+            <a href=""><i class="fa fa-rss fa-2x" aria-hidden="true"></i></a>
+          </li>
+          <li class="socialicon">
+            <a href=""><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+          </li>
+          <li class="socialicon">
+            <a href=""><i class="fa fa-google-plus fa-2x" aria-hidden="true"></i></a>
+          </li>
+          <li class="socialicon">
+            <a href=""><i class="fa fa-pinterest-p fa-2x" aria-hidden="true"></i></a>
+          </li>
+          <li class="socialicon">
+            <a href=""><i class="fa fa-vk fa-2x" aria-hidden="true"></i></a>
+          </li>
         </ul>
       </div>
     </div>
@@ -109,15 +122,16 @@
               <input type="name" class="form-control" id="name" placeholder="Your Name">
             </div>
             <div class="form-group">
-              <label for="city">Your City</label>
+              <label for="city">City</label>
               <input type="city" class="form-control" id="city" placeholder="Your City">
             </div>
+            <label for="city">Message</label>
             <textarea class="form-control" rows="5" placeholder="Enter your message here"></textarea>
           </form>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-          <button type="button" class="btn btn-primary">Send</button>
+          <button type="button" class="btn btn-default">Send</button>
         </div>
       </div>
     </div>

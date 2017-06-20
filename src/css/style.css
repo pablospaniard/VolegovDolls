@@ -9190,81 +9190,98 @@ button.close {
   }
 }
 
-@media only screen and (max-width: 1550px) {
-  /* line 3, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
+@media only screen and (max-width: 1660px) {
+  /* line 2, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
   .jumbotron {
     background-color: rgba(255, 255, 255, 0.8) !important;
-    -webkit-transition-property: compact(all, false, false, false, false, false, false, false, false, false);
-    -moz-transition-property: compact(all, false, false, false, false, false, false, false, false, false);
-    -o-transition-property: compact(all, false, false, false, false, false, false, false, false, false);
-    transition-property: compact(all, false, false, false, false, false, false, false, false, false);
-    -webkit-transition-duration: compact(1s, false, false, false, false, false, false, false, false, false);
-    -moz-transition-duration: compact(1s, false, false, false, false, false, false, false, false, false);
-    -o-transition-duration: compact(1s, false, false, false, false, false, false, false, false, false);
-    transition-duration: compact(1s, false, false, false, false, false, false, false, false, false);
-    -webkit-transition-timing-function: compact(ease-in-out, false, false, false, false, false, false, false, false, false);
-    -moz-transition-timing-function: compact(ease-in-out, false, false, false, false, false, false, false, false, false);
-    -o-transition-timing-function: compact(ease-in-out, false, false, false, false, false, false, false, false, false);
-    transition-timing-function: compact(ease-in-out, false, false, false, false, false, false, false, false, false);
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  /* line 10, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
+  .jumbotron {
+    height: auto !important;
   }
 }
 
 @media only screen and (max-width: 767px) {
-  /* line 11, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
+  /* line 15, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
+  h1 {
+    display: inline-flex;
+    justify-content: center;
+  }
+  /* line 20, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
   #nav-menu {
-    justify-content: center !important;
     background-color: white;
     margin-bottom: 50px !important;
+    flex-direction: column;
+    align-items: center;
   }
-  /* line 17, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
+  /* line 27, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
   #bg {
     background: none !important;
   }
-  /* line 20, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
+  /* line 30, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
   #bg .jumbotron {
     margin-right: 0 !important;
     margin-bottom: 0 !important;
     padding-top: 0 !important;
     align-items: center;
   }
-  /* line 26, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
+  /* line 36, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
   #bg .jumbotron p {
     text-align: center;
   }
-  /* line 30, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
+  /* line 40, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
+  #bg .jumbotron .col-xs-12 {
+    display: flex;
+    justify-content: center;
+  }
+  /* line 44, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
+  #bg .jumbotron .col-xs-12 .caption h3 {
+    display: flex;
+    justify-content: center;
+  }
+  /* line 51, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
   #bg .jumbotron #mobile-img {
     display: block !important;
     width: auto;
     height: 400px;
   }
-  /* line 36, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
+  /* line 57, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
   #bg .jumbotron h1 {
     margin: 40px 0;
   }
-  /* line 40, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
+  /* line 61, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
   #bg .jumbotron .btn {
     margin-top: 20px;
   }
-  /* line 44, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
+  /* line 65, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
   #bg .jumbotron #face-img {
     width: 100% !important;
     opacity: 1 !important;
   }
-  /* line 51, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
+  /* line 72, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
   footer {
     margin-top: 0 !important;
   }
-  /* line 53, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
+  /* line 75, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
   footer .row {
     flex-direction: column;
   }
-  /* line 56, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
+  /* line 79, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
   footer #bottom-menu-767 {
     margin-top: 20px;
   }
 }
 
-/* line 9, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
+/* line 7, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
 body {
   font-family: "Lora", serif;
   font-size: 16px;
@@ -9272,25 +9289,25 @@ body {
   margin: 50px 0;
 }
 
-/* line 16, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
+/* line 14, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
 a {
   color: black !important;
 }
 
-/* line 18, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
+/* line 17, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
 a:hover {
   border-bottom: 1px solid black;
   text-decoration: none;
 }
 
-/* line 25, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
+/* line 24, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
 .col-xs-12 {
   text-align: center;
   font-size: 2rem;
   text-transform: uppercase;
 }
 
-/* line 32, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
+/* line 31, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
 #nav-menu {
   display: flex;
   justify-content: space-between;
@@ -9298,21 +9315,26 @@ a:hover {
   float: none;
 }
 
-/* line 39, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
+/* line 38, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
 .navbar {
   background-color: transparent;
   border-color: transparent;
   font-size: 2rem;
 }
 
-/* line 44, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
+/* line 43, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
 .navbar .active {
   border-bottom: 1px solid black;
 }
 
-/* line 47, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
+/* line 46, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
 .navbar .active a {
   background-color: white !important;
+}
+
+/* line 51, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
+.navbar .dropdown-menu {
+  padding: 0 !important;
 }
 
 /* line 54, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
@@ -9320,7 +9342,7 @@ a:hover {
   font-size: 2rem;
 }
 
-/* line 61, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
+/* line 62, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
 #bg {
   background: url("../img/font.png");
   background-repeat: no-repeat;
@@ -9328,32 +9350,33 @@ a:hover {
   background-size: contain;
 }
 
-/* line 66, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
+/* line 67, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
 #bg .jumbotron {
   background-color: transparent;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-right: 25%;
+  height: 900px;
 }
 
-/* line 72, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
+/* line 74, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
 #bg .jumbotron h2 {
   text-align: center;
   margin-bottom: 20px;
 }
 
-/* line 77, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
+/* line 79, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
 #bg .jumbotron .btn-default:hover {
   background-color: white !important;
 }
 
-/* line 81, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
+/* line 83, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
 #bg .jumbotron #mobile-img {
   display: none;
 }
 
-/* line 84, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
+/* line 86, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
 #bg .jumbotron #face-img {
   width: 40%;
   height: auto;
@@ -9374,23 +9397,67 @@ a:hover {
   transition-timing-function: ease-in-out;
 }
 
-/* line 93, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
+/* line 95, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
 #bg .jumbotron #face-img:hover {
   opacity: 1;
 }
 
-/* line 103, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
+/* line 99, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
+#bg .jumbotron .title-gallery {
+  margin-bottom: 20px;
+}
+
+/* line 101, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
+#bg .jumbotron .title-gallery h2 {
+  text-align: center;
+}
+
+/* line 105, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
+#bg .jumbotron .video {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+/* line 109, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
+#bg .jumbotron .video .videos {
+  margin-bottom: 20px;
+}
+
+/* line 113, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
+#bg .jumbotron .items {
+  height: 100%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 119, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
+#bg .jumbotron .items .item {
+  max-height: 430px;
+  max-width: 300px;
+}
+
+/* line 123, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
+#bg .jumbotron .items .item .caption h3 {
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+/* line 136, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
 footer {
   margin-top: 50px;
 }
 
-/* line 105, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
+/* line 139, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
 footer .row {
   display: flex;
   align-items: center;
 }
 
-/* line 108, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
+/* line 143, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
 footer .row .social-icons {
   display: flex;
   flex-direction: row;
@@ -9398,17 +9465,169 @@ footer .row .social-icons {
   justify-content: space-around;
 }
 
-/* line 119, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
+/* line 148, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
+footer .row .social-icons a {
+  border-bottom: none;
+}
+
+/* line 152, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
+footer .row .social-icons .fa-facebook {
+  -webkit-transition-property: color;
+  -moz-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+
+/* line 156, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
+footer .row .social-icons .fa-facebook:hover {
+  color: #3b5999;
+}
+
+/* line 161, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
+footer .row .social-icons .fa-youtube {
+  -webkit-transition-property: color;
+  -moz-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+
+/* line 165, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
+footer .row .social-icons .fa-youtube:hover {
+  color: #cd201f;
+}
+
+/* line 170, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
+footer .row .social-icons .fa-rss {
+  -webkit-transition-property: color;
+  -moz-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+
+/* line 174, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
+footer .row .social-icons .fa-rss:hover {
+  color: #ee802f;
+}
+
+/* line 179, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
+footer .row .social-icons .fa-instagram {
+  -webkit-transition-property: color;
+  -moz-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+
+/* line 183, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
+footer .row .social-icons .fa-instagram:hover {
+  color: #bc2a8d;
+}
+
+/* line 187, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
+footer .row .social-icons .fa-google-plus {
+  -webkit-transition-property: color;
+  -moz-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+
+/* line 191, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
+footer .row .social-icons .fa-google-plus:hover {
+  color: #dd4b39;
+}
+
+/* line 195, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
+footer .row .social-icons .fa-pinterest-p {
+  -webkit-transition-property: color;
+  -moz-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+
+/* line 199, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
+footer .row .social-icons .fa-pinterest-p:hover {
+  color: #bd081c;
+}
+
+/* line 203, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
+footer .row .social-icons .fa-vk {
+  -webkit-transition-property: color;
+  -moz-transition-property: color;
+  -o-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+
+/* line 207, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
+footer .row .social-icons .fa-vk:hover {
+  color: #4c75a3;
+}
+
+/* line 216, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
 #order .modal-content {
   padding: 20px;
 }
 
-/* line 123, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
+/* line 221, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
 #order .modal-body li ul li {
   margin-left: 20px;
 }
 
-/* line 130, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
+/* line 228, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/style.scss */
 #contacts .modal-content {
   padding: 20px;
 }

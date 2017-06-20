@@ -1,11 +1,9 @@
 @import "vendors/bootstrap";
 @import "vendors/media";
 @import "compass";
-
 $text-font: 'Lora', serif; // GLOBAL
-
-
 // GLOBAL
+
 body {
   font-family: $text-font;
   font-size: 16px;
@@ -15,6 +13,7 @@ body {
 
 a {
   color: black !important;
+
   &:hover {
     border-bottom: 1px solid black;
     text-decoration: none;
@@ -50,6 +49,7 @@ a {
   }
 
   .dropdown-menu {
+    padding: 0 !important;
     li {
       a {
         font-size: 2rem;
@@ -58,6 +58,7 @@ a {
   }
 }
 // JUMBOTRON
+
 #bg {
   background: url('../img/font.png');
   background-repeat: no-repeat;
@@ -69,6 +70,7 @@ a {
     flex-direction: column;
     justify-content: center;
     margin-right: 25%;
+    height: 900px;
     h2 {
       text-align: center;
       margin-bottom: 20px;
@@ -92,40 +94,136 @@ a {
       @include transition-timing-function(ease-in-out);
       &:hover {
         opacity: 1;
-
       }
+    }
+    .title-gallery {
+      margin-bottom: 20px;
+      h2 {
+        text-align: center;
+      }
+    }
+    .video {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      .videos {
+        margin-bottom: 20px;
+      }
+    }
+    .items {
+      height: 100%;
+      display: inline-flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      .item {
+        max-height: 430px;
+        max-width: 300px;
+        .caption {
+          h3 {
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+
     }
   }
 }
-
-
 // FOOTER
+
 footer {
   margin-top: 50px;
+
   .row {
     display: flex;
     align-items: center;
+
     .social-icons {
       display: flex;
       flex-direction: row;
       flex-shrink: 1;
       justify-content: space-around;
+      a {
+        border-bottom: none;
+      }
+
+      .fa-facebook {
+        @include transition-property(color);
+        @include transition-duration(0.5s);
+        @include transition-timing-function(ease-in-out);
+        &:hover {
+          color: #3b5999;
+        }
+      }
+
+      .fa-youtube {
+        @include transition-property(color);
+        @include transition-duration(0.5s);
+        @include transition-timing-function(ease-in-out);
+        &:hover {
+          color: #cd201f;
+        }
+      }
+
+      .fa-rss {
+        @include transition-property(color);
+        @include transition-duration(0.5s);
+        @include transition-timing-function(ease-in-out);
+        &:hover {
+          color: #ee802f;
+        }
+      }
+
+      .fa-instagram {
+        @include transition-property(color);
+        @include transition-duration(0.5s);
+        @include transition-timing-function(ease-in-out);
+        &:hover {
+          color: #bc2a8d;
+        }
+      }
+      .fa-google-plus {
+        @include transition-property(color);
+        @include transition-duration(0.5s);
+        @include transition-timing-function(ease-in-out);
+        &:hover {
+          color: #dd4b39;
+        }
+      }
+      .fa-pinterest-p {
+        @include transition-property(color);
+        @include transition-duration(0.5s);
+        @include transition-timing-function(ease-in-out);
+        &:hover {
+          color: #bd081c;
+        }
+      }
+      .fa-vk {
+        @include transition-property(color);
+        @include transition-duration(0.5s);
+        @include transition-timing-function(ease-in-out);
+        &:hover {
+          color: #4c75a3;
+        }
+      }
     }
   }
 }
-
 // MODAL
 #order {
   .modal-content {
     padding: 20px;
   }
+
   .modal-body {
     li ul li {
       margin-left: 20px;
     }
+  }
 }
 
-}
 #contacts {
   .modal-content {
     padding: 20px;

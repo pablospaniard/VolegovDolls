@@ -1,5 +1,4 @@
-@import "compass/css3/transition";
-@media only screen and (max-width: 1550px) {
+@media only screen and (max-width: 1660px) {
   .jumbotron {
     background-color: rgba(255, 255, 255, 0.8) !important;
     @include transition-property(all);
@@ -7,11 +6,22 @@
     @include transition-timing-function(ease-in-out);
   }
 }
+@media only screen and (max-width: 991px) {
+  .jumbotron {
+    height: auto !important;
+  }
+}
 @media only screen and (max-width: 767px) {
+  h1 {
+    display: inline-flex;
+    justify-content: center;
+  }
+
   #nav-menu {
-    justify-content: center !important;
     background-color: white;
     margin-bottom: 50px !important;
+    flex-direction: column;
+    align-items: center;
   }
 
   #bg {
@@ -25,6 +35,17 @@
 
       p {
         text-align: center;
+      }
+
+      .col-xs-12 {
+        display: flex;
+        justify-content: center;
+        .caption {
+          h3 {
+            display: flex;
+            justify-content: center;
+          }
+        }
       }
 
       #mobile-img {
@@ -50,9 +71,11 @@
 
   footer {
     margin-top: 0 !important;
+
     .row {
       flex-direction: column;
     }
+
     #bottom-menu-767 {
       margin-top: 20px;
     }
