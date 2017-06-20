@@ -9204,78 +9204,98 @@ button.close {
 }
 
 @media only screen and (max-width: 991px) {
-  /* line 10, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
-  .jumbotron {
+  /* line 11, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
+  #bg .container {
+    display: flex;
+    justify-content: center;
+  }
+  /* line 14, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
+  #bg .container .jumbotron {
     height: auto !important;
+    margin-right: 0 !important;
+    width: 100%;
   }
 }
 
 @media only screen and (max-width: 767px) {
-  /* line 15, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
+  /* line 25, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
   h1 {
     display: inline-flex;
     justify-content: center;
   }
-  /* line 20, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
+  /* line 30, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
   #nav-menu {
     background-color: white;
     margin-bottom: 50px !important;
     flex-direction: column;
     align-items: center;
   }
-  /* line 27, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
+  /* line 37, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
   #bg {
     background: none !important;
   }
-  /* line 30, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
+  /* line 40, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
   #bg .jumbotron {
     margin-right: 0 !important;
     margin-bottom: 0 !important;
     padding-top: 0 !important;
     align-items: center;
   }
-  /* line 36, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
+  /* line 45, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
   #bg .jumbotron p {
     text-align: center;
   }
-  /* line 40, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
+  /* line 48, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
   #bg .jumbotron .col-xs-12 {
     display: flex;
     justify-content: center;
   }
-  /* line 44, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
-  #bg .jumbotron .col-xs-12 .caption h3 {
+  /* line 51, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
+  #bg .jumbotron .col-xs-12 .item {
+    max-width: 100% !important;
+    max-height: none !important;
+  }
+  /* line 55, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
+  #bg .jumbotron .col-xs-12 .item .caption h3 {
     display: flex;
     justify-content: center;
   }
-  /* line 51, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
-  #bg .jumbotron #mobile-img {
+  /* line 62, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
+  #bg .jumbotron .video {
+    width: 100% !important;
+  }
+  /* line 64, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
+  #bg .jumbotron .video .embed-responsive {
+    width: 100% !important;
+  }
+  /* line 70, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
+  #bg #mobile-img {
     display: block !important;
     width: auto;
     height: 400px;
   }
-  /* line 57, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
-  #bg .jumbotron h1 {
+  /* line 76, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
+  #bg h1 {
     margin: 40px 0;
   }
-  /* line 61, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
-  #bg .jumbotron .btn {
+  /* line 80, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
+  #bg .btn {
     margin-top: 20px;
   }
-  /* line 65, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
-  #bg .jumbotron #face-img {
+  /* line 84, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
+  #bg #face-img {
     width: 100% !important;
     opacity: 1 !important;
   }
-  /* line 72, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
+  /* line 91, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
   footer {
     margin-top: 0 !important;
   }
-  /* line 75, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
+  /* line 94, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
   footer .row {
     flex-direction: column;
   }
-  /* line 79, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
+  /* line 98, /Users/Pavel/Dropbox/Code/Projects/VolegovDolls/src/scss/vendors/_media.scss */
   footer #bottom-menu-767 {
     margin-top: 20px;
   }

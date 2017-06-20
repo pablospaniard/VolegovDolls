@@ -7,9 +7,19 @@
   }
 }
 @media only screen and (max-width: 991px) {
-  .jumbotron {
-    height: auto !important;
+  #bg {
+    .container {
+      display: flex;
+      justify-content: center;
+      .jumbotron {
+        height: auto !important;
+        margin-right: 0 !important;
+            width: 100%;
+      }
+    }
   }
+
+
 }
 @media only screen and (max-width: 767px) {
   h1 {
@@ -32,21 +42,30 @@
       margin-bottom: 0 !important;
       padding-top: 0 !important;
       align-items: center;
-
       p {
         text-align: center;
       }
-
       .col-xs-12 {
         display: flex;
         justify-content: center;
-        .caption {
-          h3 {
-            display: flex;
-            justify-content: center;
+        .item {
+          max-width: 100% !important;
+          max-height: none !important;
+          .caption {
+            h3 {
+              display: flex;
+              justify-content: center;
+            }
           }
         }
       }
+      .video {
+        width: 100% !important;
+        .embed-responsive {
+          width: 100% !important;
+        }
+      }
+    }
 
       #mobile-img {
         display: block!important;
@@ -67,7 +86,7 @@
         opacity: 1 !important;
       }
     }
-  }
+
 
   footer {
     margin-top: 0 !important;
