@@ -17,6 +17,12 @@
             width: 100%;
       }
     }
+    .expo {
+      max-height: none !important;
+      .photo-expo {
+        width: 100% !important;
+      }
+    }
   }
 
 

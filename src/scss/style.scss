@@ -21,7 +21,7 @@ a {
 }
 // HEADER
 
-.col-xs-12 {
+#header-title {
   text-align: center;
   font-size: 2rem;
   text-transform: uppercase;
@@ -43,6 +43,10 @@ a {
   .active {
     border-bottom: 1px solid black;
 
+    &:hover {
+      border-bottom: none;
+    }
+
     a {
       background-color: white !important;
     }
@@ -50,6 +54,7 @@ a {
 
   .dropdown-menu {
     padding: 0 !important;
+
     li {
       a {
         font-size: 2rem;
@@ -64,6 +69,11 @@ a {
   background-repeat: no-repeat;
   background-position: top right;
   background-size: contain;
+
+  #index-jumbo {
+    justify-content: space-around;
+  }
+
   .jumbotron {
     background-color: transparent;
     display: flex;
@@ -71,18 +81,22 @@ a {
     justify-content: center;
     margin-right: 25%;
     height: 900px;
+
     h2 {
       text-align: center;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
     }
+
     .btn-default {
       &:hover {
         background-color: white !important;
       }
     }
+
     #mobile-img {
       display: none;
     }
+
     #face-img {
       width: 40%;
       height: auto;
@@ -92,24 +106,30 @@ a {
       @include transition-property(all);
       @include transition-duration(1s);
       @include transition-timing-function(ease-in-out);
+
       &:hover {
         opacity: 1;
       }
     }
+
     .title-gallery {
       margin-bottom: 20px;
+
       h2 {
         text-align: center;
       }
     }
+
     .video {
       display: flex;
       flex-flow: row wrap;
       justify-content: center;
+
       .videos {
         margin-bottom: 20px;
       }
     }
+
     .items {
       // display: flex;
       // flex-wrap: wrap;
@@ -121,7 +141,8 @@ a {
       .item {
         max-height: 430px;
         max-width: 300px;
-        margin: 0 0 20px 0;
+        margin: 0 0 20px;
+
         .caption {
           h3 {
             min-height: 60px;
@@ -129,11 +150,28 @@ a {
             align-items: center;
           }
         }
+
         .hidden-img {
           display: none;
         }
       }
+    }
 
+    .expo {
+      max-height: 900px;
+      overflow: scroll;
+      .col-expo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .photo-expo {
+          width: 50%;
+          height: auto;
+          float: left;
+          margin: 0 1em 1em 0;
+        }
+      }
     }
   }
 }
@@ -151,6 +189,7 @@ footer {
       flex-direction: row;
       flex-shrink: 1;
       justify-content: space-around;
+
       a {
         border-bottom: none;
       }
@@ -159,6 +198,7 @@ footer {
         @include transition-property(color);
         @include transition-duration(0.5s);
         @include transition-timing-function(ease-in-out);
+
         &:hover {
           color: #3b5999;
         }
@@ -168,6 +208,7 @@ footer {
         @include transition-property(color);
         @include transition-duration(0.5s);
         @include transition-timing-function(ease-in-out);
+
         &:hover {
           color: #cd201f;
         }
@@ -177,6 +218,7 @@ footer {
         @include transition-property(color);
         @include transition-duration(0.5s);
         @include transition-timing-function(ease-in-out);
+
         &:hover {
           color: #ee802f;
         }
@@ -186,30 +228,37 @@ footer {
         @include transition-property(color);
         @include transition-duration(0.5s);
         @include transition-timing-function(ease-in-out);
+
         &:hover {
           color: #bc2a8d;
         }
       }
+
       .fa-google-plus {
         @include transition-property(color);
         @include transition-duration(0.5s);
         @include transition-timing-function(ease-in-out);
+
         &:hover {
           color: #dd4b39;
         }
       }
+
       .fa-pinterest-p {
         @include transition-property(color);
         @include transition-duration(0.5s);
         @include transition-timing-function(ease-in-out);
+
         &:hover {
           color: #bd081c;
         }
       }
+
       .fa-vk {
         @include transition-property(color);
         @include transition-duration(0.5s);
         @include transition-timing-function(ease-in-out);
+
         &:hover {
           color: #4c75a3;
         }
@@ -218,6 +267,7 @@ footer {
   }
 }
 // MODAL
+
 #order {
   .modal-content {
     padding: 20px;
