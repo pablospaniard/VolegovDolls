@@ -7,11 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Volegov Dolls</title>
   <!-- Core files CSS -->
-  <link rel="stylesheet" href="./src/css/reset.css">
+  <link rel="stylesheet" href="src/css/reset.css">
   <script src="https://use.fontawesome.com/54f885f465.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/magnific-popup.css" type="text/css">
   <!-- Custom styles for this template -->
-  <link rel="stylesheet" href="./src/css/style.css" type="text/css">
+  <link rel="stylesheet" href="src/css/style.css" type="text/css">
 
 </head>
 
@@ -68,9 +69,15 @@
         <div class="row items">
           <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="item thumbnail">
-              <img src="src/img/hepburn.jpg" alt="Audrey Hepburn">
-              <div class="caption">
-                <h3>Audrey Hepburn</h3>
+              <div class="popup-gallery">
+                <a href="src/img/hepburn.jpg" title="Audrey Hepburn">
+                  <img src="src/img/hepburn.jpg" alt="Audrey Hepburn">
+                </a>
+                <a href="src/img/lenin.jpg" class="hidden-img" title="Vladimir Lenin"></a>
+                <a href="src/img/volegova.jpg" class="hidden-img" title="Katya Volegova"></a>
+                <div class="caption">
+                  <h3>Audrey Hepburn</h3>
+                </div>
               </div>
             </div>
           </div>
@@ -221,6 +228,9 @@
   <script src="./src/js/jquery-3.2.1.slim.js"></script>
   <script src="./src/js/bootstrap.min.js"></script>
   <script src="src/js/main.js"></script>
+  <script type="text/javascript" src="src/js/jquery.magnific-popup.min.js"></script>
+  <script type="text/javascript" src="src/js/lightbox.js">
+  </script>
 </body>
 
 </html>
