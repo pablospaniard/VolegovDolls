@@ -1,7 +1,7 @@
 @import "vendors/bootstrap";
 @import "vendors/media";
 @import "compass";
-$text-font: 'Lora', serif; // GLOBAL
+$text-font: 'Lora', serif;
 // GLOBAL
 
 body {
@@ -131,13 +131,6 @@ a {
     }
 
     .items {
-      // display: flex;
-      // flex-wrap: wrap;
-      // justify-content: center;
-      // align-items: center;
-      // .col-md-4 {
-      //   width: 33% !important;
-      // }
       .item {
         max-height: 430px;
         max-width: 300px;
@@ -183,6 +176,11 @@ footer {
   .row {
     display: flex;
     align-items: center;
+
+    #col-footer {
+      display: flex;
+      justify-content: center;
+    }
 
     .social-icons {
       display: flex;

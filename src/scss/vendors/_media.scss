@@ -14,13 +14,20 @@
       .jumbotron {
         height: auto !important;
         margin-right: 0 !important;
-            width: 100%;
+        width: 100%;
       }
     }
     .expo {
       max-height: none !important;
-      .photo-expo {
-        width: 100% !important;
+      .col-expo {
+        border-bottom: 1px solid black;
+        margin-bottom: 20px;
+        .photo-expo {
+          width: 100% !important;
+        }
+        p {
+          margin-bottom: 40px;
+        }
       }
     }
   }
@@ -52,8 +59,8 @@
         text-align: center;
       }
       .items{
-        // display: flex;
-        // justify-content: center;
+        display: flex;
+        flex-direction: column;
         .item {
           max-width: 100% !important;
           max-height: none !important;
