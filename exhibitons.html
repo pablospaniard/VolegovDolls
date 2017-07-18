@@ -9,7 +9,7 @@
   <!-- Core files CSS -->
   <link rel="stylesheet" href="./src/css/reset.css">
   <script src="https://use.fontawesome.com/54f885f465.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet"> -->
   <!-- Custom styles for this template -->
   <link rel="stylesheet" href="./src/css/style.css" type="text/css">
 
@@ -19,6 +19,9 @@
 
   <header class="container">
     <div class="row">
+      <div class="col-xs-12" id="language-mobile">
+        <p><a href="#">RUS</a>/<a href="#">ENG</a></p>
+      </div>
       <div class="col-xs-12" id="header-title">
         <h1>Vladimir Volegov</h1>
       </div>
@@ -50,7 +53,7 @@
           </li>
           <li><a href="about.html">About</a></li>
           <li class="active"><a href="exhibitons.html">Exhibitions</a></li>
-          <li><a href="#" data-target="#order" data-toggle="modal">Order</a></li>
+          <!-- <li><a href="#" data-target="#order" data-toggle="modal">Order</a></li> -->
           <li><a href="#" data-target="#contacts" data-toggle="modal">Contacts</a></li>
         </ul>
       </div>
@@ -59,23 +62,29 @@
 
   <div class="container-fluid" id="bg">
     <div class="container">
-      <div class="jumbotron exhibitons">
+      <div class="jumbotron" id="jumbotron-items">
         <div class="row expo">
           <div class="col-xs-12 col-expo">
-            <h2>DOLL EXPO PARIS 2012</h2>
-            <p><img src="src/img/paris-foto.jpg" alt="Foto on Paris Expo" class="photo-expo">11 of March 2012 has passed exhibition <strong>DOLL EXPO PARIS</strong>, was coming a lot of visitors, and in spite of the idea of Fashion doll not coincided with
-              idea of my dolls, I received many proposals and opinions. It was my first participation in exhibition and gave me confidence in creating of subsequent dolls.</p>
+            <div class="foto-caption">
+              <img src="src/img/paris-foto.jpg" alt="Foto on Paris Expo" class="foto-expo">
+              <h2><span>DOLL EXPO PARIS 2012</span></h2>
+              <p>11 of March 2012 has passed exhibition <strong>DOLL EXPO PARIS</strong>, was coming a lot of visitors, and in spite of the idea of Fashion doll not coincided with idea of my dolls, I received many proposals and opinions. It was my first
+                participation in exhibition and gave me confidence in creating of subsequent dolls.</p>
+            </div>
           </div>
           <div class="col-xs-12 col-expo">
-            <h2>ART EXPO NEW YORK 2012</h2>
-            <p><img src="src/img/new-york-photo.jpg" alt="Foto on New York Expo" class="photo-expo">I exhibited in <strong>ArtExpo NY</strong> with my paintings and showed also my first four dolls, they have had a lot of interest, because they are very different
-              from all dolls. Two of them were bought.</p>
+            <div class="foto-caption">
+              <img src="src/img/new-york-photo.jpg" alt="Foto on New York Expo" class="foto-expo">
+              <h2><span>ART EXPO NEW YORK 2012</span></h2>
+              <p>I exhibited in <strong>ArtExpo NY</strong> with my paintings and showed also my first four dolls, they have had a lot of interest, because they are very different from all dolls. Two of them were bought.</p>
+            </div>
           </div>
           <div class="col-xs-12 col-expo">
-            <h2>DEAR DOLLY BARCELONA 2012</h2>
-            <p><img src="src/img/bcn-photo.jpg" alt="Foto on BArcelona Expo" class="photo-expo">20-21 of June in Barcelona, hotel Catalonia was <strong>The First Mediterranean Doll Art Festival</strong>. Arrived a lot of famous doll-masters from all over
-              the world, and also very talanted spanish doll-masters: Peca и Sally's Song.
-            </p>
+            <div class="foto-caption">
+              <img src="src/img/bcn-photo.jpg" alt="Foto on BArcelona Expo" class="foto-expo">
+              <h2><span>DEAR DOLLY BARCELONA 2012</span></h2>
+              <p>20-21 of June in Barcelona, hotel Catalonia was <strong>The First Mediterranean Doll Art Festival</strong>. Arrived a lot of famous doll-masters from all over the world, and also very talanted spanish doll-masters: Peca и Sally's Song.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -150,7 +159,7 @@
   </div>
 
   <!-- MODAL Order -->
-  <div class="modal fade" tabindex="-1" role="dialog" id="order">
+  <!-- <div class="modal fade" tabindex="-1" role="dialog" id="order">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -178,7 +187,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <!-- JQuery and BootstrapJS, Placed at the end of the document so the pages load faster -->
   <script src="./src/js/jquery-3.2.1.slim.js"></script>
