@@ -46,6 +46,7 @@ a {
   justify-content: space-between;
   flex-wrap: wrap;
   float: none;
+  text-transform: uppercase;
 }
 
 .navbar {
@@ -138,6 +139,7 @@ a {
       position: relative;
       left: -25px;
       top: -25px;
+      border: 5px solid white;
     }
 
     #about-text {
